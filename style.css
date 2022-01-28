@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+       height: 100%;
+      
+  }
+     
+  /* header y logo para todas las paginas */    
+  
+  header{
+      background-color: rgb(255, 198, 255);
+      /* position: sticky; */
+      top: 0;
+      height: 60px;
+      width: 100%;
+      margin-top: 0;
+      text-align: center;
+  }
+  
+  
+  nav, .ulNav, li{
+      display: inline-block;
+      text-align: center;
+  }
+  
+  h1{
+      color: black;
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      display: inline;
+      position: absolute;
+      left: 0; 
+  }
+  
+  .navButton{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 5px;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      bottom: 0; 
+  }
+  
+  .ulNav li a:hover{
+      color: black;
+  }
+  
+  .logo{
+     
+      height: 300px;
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border-radius: 200px;
+  }
+  
+  
+  /* index html */
+  
+   .gridContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+      grid-template-areas: 
+      "header header header header"
+      "log log log log"
+      "inicio inicio inicio inicio"
+      "subt subt subt subt"
+      "foto foto foto foto"
+      "foto foto foto foto"
+      "footerUno footerUno footerUno footerUno";   
+    }
+  
+    .headerHtml{
+        grid-area: header;
+    }
+   
+    .contenedorLogo{
+        grid-area: log;
+    }
+  
+  .inicio{
+      grid-area: inicio;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .inicio img{
+      display: flex;
+      height: 30rem;
+      width: 80rem;    
+  }
+  
+  .subtitulo{
+      grid-area: subt;
+  }
+  
+  h2{
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: 'Architects Daughter', cursive;
+  }
+  
+  .mes img{
+      height: 250px;
+      width: 250px;
+     box-shadow: 3px 5px 15px 0 black;
+     margin: 30px;
+  }
+  
+   .mes{
+      grid-area: foto;
+      position: relative;
+      border: solid 2px grey;
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+   
+  
+   .mes div{
+      display: inline-block;
+      margin-bottom: 30px;
+  }
+  
+  
+  .destacadoTres{
+    
+      position: relative;
+      margin-left: 180px;
+  }
+  
+  .destacadoDos{
+     
+      position: relative;
+     margin-left: 115px;
+  }
+  
+  .destacadoUno{
+     
+      position: relative;
+      margin-left: 30px;
+  }
+  
+  
+  .info{
+     
+     
+      background-color: rgb(156, 201, 228);
+      border: solid black;
+      
+  }
+  
+  .info div{
+      display: inline-block;
+  }
+  
+  h3{
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .info p{
+      font-family: sans-serif;
+  
+  }
+  .footerUno{
+      grid-area: footerUno;
+  }
+  
+  
+  /* smartwatch html */
+  
+  .gridSmartwatch{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto;
+      grid-template-areas: 
+      "navegador navegador navegador"
+      "logDos logDos logDos"
+      "subDos subDos subDos"
+      "main main main"
+      "relojes relojes relojes"
+      "relojes relojes relojes"
+      "footerDos footerDos footerDos";
+  }
+  
+  .headerSmartwatch{
+      grid-area: navegador;
+  }
+  .logoSmartwatch{
+      grid-area: logDos;
+  }
+  .subtituloSmartwatch{
+      grid-area: subDos;
+  }
+  
+  main{
+      grid-area: main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .presentacion{
+      display: flex;
+      margin: 10px;
+      gap: 30px;
+  }
+  .presentacionVideo{
+      width: 50%;
+  }
+  .presentacionTexto{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+      font-size: 20px;
+      font-family: sans-serif;
+  
+  }
+  button a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  button{
+      background-color: red;
+      border-radius: 20px;
+      width: 4rem;
+      border: none;
+      font-size: 15px;
+     font-family: fantasy;
+     margin: 10px 0;
+  }
+  
+  .relojes{
+      grid-area: relojes;
+      text-align: center;
+      margin: 30px;
+      padding: 30px;
+      border: solid 1px #99A799;
+      border-radius: 4px;
+  }
+  
+  .relojes-img{
+      width: 200px;
+      height: 200px;
+  }
+  .footerDos{
+      grid-area: footerDos;
+  }
+  
+  
+  
+  /* combos html */
+  
+  .gridCombos{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas: 
+      "headerCombos headerCombos headerCombos"
+      "logTres logTres logTres"
+      "subTres subTres subTres"
+      "combos combos combos"
+      "footerTres footerTres footerTres"
+      ;
+  }
+  
+  .headerCombos{
+      grid-area: headerCombos;
+  }
+  .logTres{
+      grid-area: logTres;
+  }
+  .subTres{
+      grid-area: subTres;
+  }
+  .footerTres{
+      grid-area: footerTres;
+  }
+  
+  .combos{
+      grid-area: combos;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      padding: 30px;
+      min-height: 60vh;
+  }
+  
+  .combos-img{
+      width: 300px;
+      height: 400px;
+  }
+  
+  
+  /* precios html */
+  .gridPrecios{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas: 
+      "headerPrecios headerPrecios headerPrecios"
+      "logCuatro logCuatro logCuatro"
+      "precios precios precios"
+      "precios precios precios"
+      "footerCuatro footerCuatro footerCuatro";
+  }
+  
+  .headerPrecios{
+      grid-area: headerPrecios;
+  }
+  .logCuatro{
+      grid-area: logCuatro;
+  }
+  .footerCuatro{
+      grid-area: footerCuatro;
+  }
+  
+  .precios-tabla{
+      width: 50%;
+      margin: 0 25%;
+      border: solid 30px rgb(255, 198, 255) ;
+      background-color: rgb(206, 248, 248);
+  }
+  
+  .precios-tabla tr, .precios-tabla th, .precios-tabla td{
+      border: solid 5px rgb(255, 198, 255);
+  }
+  
+  .precios button{
+      margin-left: 80rem;
+  
+  }
+  
+  .precios{
+      grid-area: precios;
+  }
+  table{
+      min-height: 60vh;
+  }
+  
+  /* contacto html */
+  
+  .gridContacto{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas: 
+      "headerContacto headerContacto headerContacto"
+      "logCinco logCinco logCinco"
+      "subCinco subCinco subCinco"
+      "formiulario formulario formulario"
+      "formiulario formulario formulario"
+      "footerCinco footerCinco footerCinco";
+  }
+  
+  .headerContacto{
+      grid-area: headerContacto;
+  }
+  .logCinco{
+      grid-area: logCinco;
+  }
+  
+  .subCinco{
+      grid-area: subCinco;
+  }
+  
+  fieldset{
+      height: 300px;
+      width: 40%;
+      background-color: aquamarine;
+  }
+  
+  fieldset div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      font-family: cursive;
+  }
+  legend{
+      font-family: cursive;
+  }
+  
+  .formulario{
+      grid-area: formulario;
+      min-height: 60vh;
+  }
+  .footerCinco{
+      grid-area: footerCinco;
+  }
+  
+  /*solo footer  */
+  footer{
+    
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      background-color: rgb(255, 198, 255);  
+  }
+  
+  .logoFooter{
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
+  }
+  
+  /* acá están las medias query */
+  
+  @media only screen and (max-width:599px){
+     
+      .mes{
+          border: none;
+      }
+      .logo{
+          height: 150px;
+          width: 150px;
+      }
+  
+      .inicio img{
+          display: none;
+      } 
+  }
+  
+  @media only screen and (max-width:799px){
+      h1{
+          display: none;
+      }
+      .inicio img{
+          display: none;
+      } 
+  }
+  
+  @media only screen and (max-width:1033px){
+      .combos{
+          border: none;
+      }
+  }
+
+
+
+  
